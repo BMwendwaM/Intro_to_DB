@@ -1,7 +1,4 @@
-USE alx_book_store;
-
-alx_book_store.execute("SELECT * FROM books")
-result = alx_book_store.fetchall()
-
-for i in result:
-    print(i)
+SELECT COLUMN_NAME, COLUMN_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = "alx_book_store"
+AND TABLE_NAME = "Books"
